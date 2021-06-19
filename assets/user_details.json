@@ -1,0 +1,18 @@
+[
+    {
+        "customer_number": "124312",
+        "name": "John ",
+        "last_name": "Doe",
+        "date_of_birth": "01-01-1900",
+        "sex": "Male",
+        "initial": "J.",
+        "emald_adres": "johndoe@live.nl",
+        "phone_number": "062467817",
+        "adres":{
+            "street": "first street",
+            "zip_code": "2321 AE",
+            "state_provice": "South Holland",
+            "country": "The Netherlands"
+        }
+    }
+]

@@ -1,0 +1,181 @@
+[
+    {
+        "type": "mobile",
+        "has_mobile":false,
+        "companyName": "Vodafone",
+        "logo": "assets/Vodafone-Logo.png",
+        "productName": "Start M",
+        "price": "10 EUR",
+        "start_date": "12 Feb 2020",
+        "end_date": "12 Feb 2022",
+        "duration": "2 year(S)",
+        "contents":{
+            "data": "3GB",
+            "calls": "150 M",
+            "frequency": "Monthly"
+        },
+        "info":{
+            "phoneNumber": "06123456789",
+            "unblockingKey": "03347"
+        }
+        
+    },
+    {
+        "type": "insurance",
+        "has_mobile": false,
+        "companyName": "UHG",
+        "logo": "assets/uhg.png",
+        "productName": "United health insurance",
+        "price": "47.99 EUR",
+        "start_date": "12 Feb 2020",
+        "end_date": "12 Feb 2022",
+        "duration": "2 year(S)",
+        "contents":{
+            "data": "-",
+            "calls": "-",
+            "frequency": "-"
+        }
+    },
+    {
+        "type": "mobile",
+        "has_mobile": true,
+        "companyName": "T-mobile",
+        "logo": "assets/t-mobile-squarelogo.png",
+        "productName": "Unlimited Data",
+        "price": "70 EUR",
+        "start_date": "12 Feb 2020",
+        "end_date": "12 Feb 2022",
+        "duration": "2 year(S)",
+        "contents":{
+            "data": "Unlimited",
+            "calls": "Unlimited",
+            "frequency": "Monthly"
+        },
+        "mobile":{
+            "name": "One Plus",
+            "model": "One Plus 9",
+            "logo":"assets/t-mobile-squarelogo.png"
+        },
+        "info":{
+            "phoneNumber": "06123456789",
+            "unblockingKey": "03347"
+        }
+    },
+    {
+        "type": "mobile",
+        "has_mobile": true,
+        "companyName": "AT&T",
+        "logo": "assets/att-logo.png",
+        "productName": "Unlimited Data",
+        "price": "70 EUR",
+        "start_date": "12 Feb 2020",
+        "end_date": "12 Feb 2022",
+        "duration": "2 year(S)",
+        "contents":{
+            "data": "Unlimited",
+            "calls": "Unlimited",
+            "frequency": "Monthly"
+        },
+        "mobile":{
+            "name": "Samsung",
+            "model": "Galaxy s21",
+            "logo":"assets/t-mobile-squarelogo.png"
+        },
+        "info":{
+            "phoneNumber": "06123456789",
+            "unblockingKey": "03347"
+        }
+    },
+    {
+        "type": "energie",
+        "has_mobile": false,
+        "companyName": "Vattenfall",
+        "logo": "assets/Vattenfall-Logo.png",
+        "productName": "Home electricity",
+        "price": "150 EUR",
+        "start_date": "12 Feb 2020",
+        "end_date": "12 Feb 2022",
+        "duration": "2 year(S)",
+        "contents":{
+            "data": "-",
+            "calls": "-",
+            "frequency": "-"
+        }
+    },
+    {
+        "type": "energie",
+        "has_mobile": false,
+        "companyName": "Vattenfall",
+        "logo": "assets/Vattenfall-Logo.png",
+        "productName": "Home electricity",
+        "price": "150 EUR",
+        "start_date": "12 Feb 2020",
+        "end_date": "12 Feb 2022",
+        "duration": "2 year(S)",
+        "contents":{
+            "data": "-",
+            "calls": "-",
+            "frequency": "-"
+        }
+    },
+    {
+        "type": "insurance",
+        "has_mobile": false,
+        "companyName": "Garant insurance",
+        "logo": "assets/Vodafone-Logo.png",
+        "productName": "Vodafone garant basis verzekering",
+        "price": "9.50 EUR",
+        "start_date": "12 Feb 2020",
+        "end_date": "12 Feb 2022",
+        "duration": "2 year(S)",
+        "contents":{
+            "data": "-",
+            "calls": "-",
+            "frequency": "-"
+        }
+    },
+    {
+        "type": "mobile",
+        "has_mobile": true,
+        "companyName": "AT&T",
+        "logo": "assets/att-logo.png",
+        "productName": "Unlimited Data",
+        "price": "70 EUR",
+        "start_date": "12 Feb 2020",
+        "end_date": "12 Feb 2022",
+        "duration": "2 year(S)",
+        "contents":{
+            "data": "Unlimited",
+            "calls": "Unlimited",
+            "frequency": "Monthly"
+        },
+        "mobile":{
+            "name": "Samsung",
+            "model": "Galaxy s21",
+            "logo":"assets/t-mobile-squarelogo.png"
+        },
+        "info":{
+            "phoneNumber": "06123456789",
+            "unblockingKey": "03347"
+        }
+    },
+    {
+        "type": "energie",
+        "has_mobile": false,
+        "companyName": "Vattenfall",
+        "logo": "assets/Vattenfall-Logo.png",
+        "productName": "Home electricity",
+        "price": "150 EUR",
+        "start_date": "12-02-2020",
+        "end_date": "12-02-2022",
+        "duration": "2 year(S)",
+        "contents":{
+            "data": "-",
+            "calls": "-",
+            "frequency": "-"
+        }
+    }
+    
+
+    
+]
