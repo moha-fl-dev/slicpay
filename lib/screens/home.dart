@@ -146,7 +146,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 height: 200,
                 width: double.infinity,
                 color: Colors.white60,
-                child: Center(child: Text("Rebuilding and adding github")),
+                child: Center(child: Text("Rebuilding")),
               )
             ],
           ),

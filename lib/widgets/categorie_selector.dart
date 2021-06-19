@@ -72,7 +72,12 @@ class _CateGorieSelectroState extends State<CateGorieSelectro> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                    content: Text(_categories[i]),
+                  ));
+                  print(_categories[i].toString());
+                },
                 icon: Icon(
                   getCustomIcon(
                     _categories[i],
