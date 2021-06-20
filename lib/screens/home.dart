@@ -1,8 +1,12 @@
 import 'dart:async';
+import 'dart:convert';
 import 'dart:math';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:flutte/Enteties/new_partners.dart';
 import 'package:flutte/widgets/categorie_selector.dart';
+import 'package:flutte/widgets/products_widget.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter/services.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:flutter/material.dart';
 
@@ -14,6 +18,8 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  final controller = ScrollController();
+
   final List<String> imgList = [
     "https://d2teggvo21dk1p.cloudfront.net/content/dam/vodafone/campagnes/juni-2021/iPhone-12-Pro-Banner.png.transform/w742/high/img.png",
     "https://d2teggvo21dk1p.cloudfront.net/content/dam/vodafone/telefoon/samsung/s21/S21+5G-VersionA.png.transform/w1240/high/img.png",
@@ -25,9 +31,67 @@ class _HomeScreenState extends State<HomeScreen> {
   ];
   List<String> names = ["John", "Jane", "Martin", "Martha"];
 
+  List<Partners> partnersList = [];
+
   String getRandomName() {
     return names[Random().nextInt(names.length)];
   }
+
+  @override
+  void initState() {
+    super.initState();
+    loadPartners();
+  }
+
+  Future<String> loadPartnersFromAssets() async {
+    return await rootBundle.loadString("assets/partners.json");
+  }
+
+  Future<void> loadPartners() async {
+    String jsonString = await loadPartnersFromAssets();
+
+    List<dynamic> response = json.decode(jsonString);
+
+    setState(() {
+      response.forEach((element) {
+        partnersList.add(new Partners.fromJson(element));
+      });
+    });
+  }
+
+  Widget buildPartners(String img) {
+    return Container(
+      width: 175.0,
+      child: Card(
+        color: Colors.grey[100],
+        elevation: 0.0,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            Container(
+              alignment: Alignment.center,
+              child: Image(
+                image: AssetImage(img),
+              ),
+            ),
+            ButtonTheme(
+              // make buttons use the appropriate styles for cards
+              child: ButtonBar(
+                children: <Widget>[
+                  TextButton(
+                    child: const Text('Show More'),
+                    onPressed: () {/* ... */},
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  List<String> tString = ["1", "2", "3", "4", "5", "1", "2", "3", "4", "5"];
 
   @override
   Widget build(BuildContext context) {
@@ -35,6 +99,15 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: Colors.grey[100],
       appBar: AppBar(
         toolbarHeight: 100.0,
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: <Color>[HexColor("#B597F6"), HexColor("#96C6EA")],
+            ),
+          ),
+        ),
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 5.0),
@@ -142,12 +215,7 @@ class _HomeScreenState extends State<HomeScreen> {
               SizedBox(
                 height: 20.0,
               ),
-              Container(
-                height: 200,
-                width: double.infinity,
-                color: Colors.white60,
-                child: Center(child: Text("Rebuilding")),
-              )
+              ProductsWidget(),
             ],
           ),
         ),

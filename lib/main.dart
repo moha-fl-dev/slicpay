@@ -10,9 +10,9 @@ import 'package:hexcolor/hexcolor.dart';
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
     //systemNavigationBarColor: Colors.blue, // navigation bar color
-    statusBarColor: HexColor("#2c98f0"), // status bar color
+    statusBarColor: Colors.transparent, // status bar color
     //statusBarBrightness: Brightness.light, //status bar brigtness
-    statusBarIconBrightness: Brightness.dark, //status barIcon Brightness
+    statusBarIconBrightness: Brightness.light, //status barIcon Brightness
     //systemNavigationBarDividerColor:
     //Colors.greenAccent, //Navigation bar divider color
     systemNavigationBarIconBrightness: Brightness.light, //navigation bar icon
