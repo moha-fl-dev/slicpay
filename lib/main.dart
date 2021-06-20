@@ -5,7 +5,6 @@ import 'package:flutte/screens/home.dart';
 import 'package:flutte/widgets/menu.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:hexcolor/hexcolor.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(

@@ -4,6 +4,8 @@ import 'dart:math';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutte/Enteties/new_partners.dart';
 import 'package:flutte/widgets/categorie_selector.dart';
+import 'package:flutte/widgets/find_more_widget.dart';
+import 'package:flutte/widgets/yellow_center_item_widget.dart';
 import 'package:flutte/widgets/products_widget.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
@@ -91,16 +93,23 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  List<String> tString = ["1", "2", "3", "4", "5", "1", "2", "3", "4", "5"];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[100],
+      // backgroundColor: Colors.grey[100],
+      backgroundColor: Colors.white,
       appBar: AppBar(
         toolbarHeight: 100.0,
         flexibleSpace: Container(
           decoration: BoxDecoration(
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.withOpacity(0.5),
+                spreadRadius: 1,
+                blurRadius: 5,
+                offset: Offset(0, 2), // changes position of shadow
+              ),
+            ],
             gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
@@ -212,6 +221,18 @@ class _HomeScreenState extends State<HomeScreen> {
                   }).toList(),
                 ),
               ),
+              SizedBox(
+                height: 20.0,
+              ),
+              ProductsWidget(),
+              SizedBox(
+                height: 10.0,
+              ),
+              FeaturedWidget(),
+              SizedBox(
+                height: 20.0,
+              ),
+              FindMoreWidget(),
               SizedBox(
                 height: 20.0,
               ),
