@@ -1,6 +1,6 @@
 import 'package:flutte/screens/Inspiration.dart';
 import 'package:flutte/screens/app_page.dart';
-import 'package:flutte/screens/campaign.dart';
+import 'package:flutte/screens/search_screen.dart';
 import 'package:flutte/screens/home.dart';
 import 'package:flutte/screens/profile.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +14,7 @@ class _MenuState extends State<Menu> {
   int pageIndex = 0;
   List<Widget> pageList = <Widget>[
     HomeScreen(),
-    AppPage(),
+    SearchScreen(),
     InspirationPage(),
     ProfilePage()
   ];
@@ -38,7 +38,7 @@ class _MenuState extends State<Menu> {
                 Icons.home,
               ),
               label: ""), // bottomNAcigationBarItem
-          BottomNavigationBarItem(icon: Icon(Icons.search), label: ""),
+          BottomNavigationBarItem(icon: Icon(Icons.apps), label: ""),
           BottomNavigationBarItem(
               icon: Icon(Icons.favorite_outline), label: ""),
           BottomNavigationBarItem(
