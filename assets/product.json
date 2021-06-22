@@ -1,0 +1,140 @@
+[
+  
+    {
+        "type": "mobile",
+        "name": "Iphone 12 128GB",
+        "description": "Get the latest iphone 12 From Vodafone",
+        "image": "https://d2teggvo21dk1p.cloudfront.net/content/dam/vodafone/campagnes/juni-2021/iPhone-12-Pro-Banner.png.transform/w742/high/img.png",
+        "price_1year": "1,299",
+        "price_2years": "49.99",
+        "companyName": "Apple",
+        "trending": false,
+        "options":{
+            "length": "1 year",
+            "additions_allowed": false,
+            "deductible": "?"
+        }
+    },
+    {
+        "type": "car_insurance",
+        "name": "Be insured!",
+        "description": "Get incredible insurance and customer service from State Farms",
+        "image": "https://www.seekpng.com/png/full/366-3662198_auto-insurance-icon-motor-insurance-icon.png",
+        "price_1year": "450",
+        "price_2years": "49.99",
+        "companyName": "State Farms",
+        "trending": false,
+        "options":{
+            "length": "1 year",
+            "additions_allowed": false,
+            "deductible": "?"
+        }
+    },
+    {
+        "type": "mobile_data",
+        "name": "Samsung galaxy s21 purple",
+        "description": "Get call minutes and 5G data for your phone. 50GB and unlimited calls every month.",
+        "image": "https://d2teggvo21dk1p.cloudfront.net/content/dam/vodafone/telefoon/samsung/s21/S21+5G-VersionA.png.transform/w1240/high/img.png",
+        "price_1year": "120",
+        "price_2years": "49.99",
+        "companyName": "Vodafone",
+        "trending": true,
+        "options":{
+            "length": "1 year",
+            "additions_allowed": false,
+            "deductible": "?"
+        }
+    },
+    {
+        "type": "utility",
+        "name": "Utilities for your home",
+        "description": "Find the best priced utilities for your home",
+        "image": "http://www.pngall.com/wp-content/uploads/2017/05/Save-Energy-PNG-Clipart.png",
+        "price_1year": "900",
+        "price_2years": "49.99",
+        "companyName": "T-mobile",
+        "trending": true,
+        "options":{
+            "length": "1 year",
+            "additions_allowed": false,
+            "deductible": "?"
+        }
+    },
+    {
+        "type": "health_insurance",
+        "name": "Health insurance",
+        "description": "best health insurance",
+        "image": "https://www.seekpng.com/png/full/208-2081498_health-monitors-prevention-health-insurance-icon-png.png",
+        "price_1year": "59.99",
+        "price_2years": "49.99",
+        "companyName": "United Health Group",
+        "trending": true,
+        "options":{
+            "length": "1 year",
+            "additions_allowed": false,
+            "deductible": "?"
+        }
+    },
+    {
+        "type": "home_data",
+        "name": "Home tv and wifi",
+        "description": "Combine home tv and wifi from T-mobile and get combination discounts",
+        "image": "https://www.t-mobile.nl/Consumer/media/images/_thuis/campagne/wake-up-mei-2021/v3/hc-fg-c_2P_ThuisSale_Promo-NU__560x420_JS_v1.png",
+        "price_1year": "1,200",
+        "price_2years": "49.99",
+        "companyName": "T-mobile",
+        "trending": true,
+        "options":{
+            "length": "1 year",
+            "additions_allowed": false,
+            "deductible": "?"
+        }
+    },
+    {
+        "type": "health_insurance",
+        "name": "Never settle",
+        "description": "Get the latest smartphones from Apple, Samsung, One-Plus and more...",
+        "image": "https://pics.freeicons.io/uploads/icons/png/6787704541582985692-512.png",
+        "price_1year": "16.000",
+        "price_2years": "49.99",
+        "companyName": "T-mobile",
+        "trending": false,
+        "options":{
+            "length": "1 year",
+            "additions_allowed": false,
+            "deductible": "?"
+        }
+    },
+    {
+        "type": "mobile_data",
+        "name": "Don't miss this!",
+        "description": "Go Go Go Deals!........",
+        "image": "https://www.t-mobile.nl/Consumer/media/images/_campagne/go-go-go/april-2021/swirl-nieuw/hc-fg-c_GGGD_Q2_KV_560x420.png",
+        "price_1year": "120",
+        "price_2years": "49.99",
+        "companyName": "T-mobile",
+        "trending": false,
+        "options":{
+            "length": "1 year",
+            "additions_allowed": false,
+            "deductible": "?"
+        }
+    },
+
+    {
+        "type": "water",
+        "name": "Water",
+        "description": "Water for your home",
+        "image": "https://www.freepnglogos.com/uploads/water-png/water-splash-png-15.png",
+        "price_1year": "120",
+        "price_2years": "49.99",
+        "companyName": "T-mobile",
+        "trending": true,
+        "options":{
+            "length": "1 year",
+            "additions_allowed": false,
+            "deductible": "?"
+        }
+    }
+
+]

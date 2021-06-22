@@ -53,11 +53,13 @@ class _HomeScreenState extends State<HomeScreen> {
 
     List<dynamic> response = json.decode(jsonString);
 
-    setState(() {
-      response.forEach((element) {
-        partnersList.add(new Partners.fromJson(element));
-      });
-    });
+    setState(
+      () {
+        response.forEach((element) {
+          partnersList.add(new Partners.fromJson(element));
+        });
+      },
+    );
   }
 
   Widget buildPartners(String img) {
@@ -95,8 +97,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: Colors.grey[100],
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.white70,
       appBar: AppBar(
         toolbarHeight: 100.0,
         flexibleSpace: Container(
@@ -169,6 +170,14 @@ class _HomeScreenState extends State<HomeScreen> {
                 height: 10.0,
               ),
               Container(
+                decoration: BoxDecoration(
+                  border: Border(
+                    bottom: BorderSide(
+                      width: 5.0,
+                      color: Colors.grey[200]!,
+                    ),
+                  ),
+                ),
                 width: double.infinity,
                 child: CarouselSlider(
                   options: CarouselOptions(
