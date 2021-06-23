@@ -1,8 +1,4 @@
 import 'package:awesome_notifications/awesome_notifications.dart';
-import 'package:flutte/screens/Inspiration.dart';
-import 'package:flutte/screens/app_page.dart';
-import 'package:flutte/screens/contracts_screen.dart';
-import 'package:flutte/screens/home.dart';
 import 'package:flutte/widgets/menu.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

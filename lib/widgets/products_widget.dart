@@ -207,11 +207,10 @@
 // }
 
 import 'dart:convert';
-
-import 'package:awesome_notifications/awesome_notifications.dart';
+import 'dart:math';
 import 'package:flutte/Enteties/product.dart';
+import 'package:flutte/screens/product_options.dart';
 import 'package:flutter/material.dart';
-import 'package:shimmer/shimmer.dart';
 
 class ProductsWidget extends StatefulWidget {
   const ProductsWidget({Key? key}) : super(key: key);
@@ -221,19 +220,6 @@ class ProductsWidget extends StatefulWidget {
 }
 
 class _ProductsWidgetState extends State<ProductsWidget> {
-  bool _notficicationsAllowed = false;
-
-  @override
-  void initState() {
-    AwesomeNotifications().isNotificationAllowed().then((isAllowed) {
-      _notficicationsAllowed = isAllowed;
-      if (!isAllowed) {
-        AwesomeNotifications().requestPermissionToSendNotifications();
-      }
-    });
-    super.initState();
-  }
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -268,10 +254,19 @@ class _ProductsWidgetState extends State<ProductsWidget> {
         physics: BouncingScrollPhysics(),
         itemBuilder: (context, index) {
           final product = products[index];
+          final imageBackgroundColor = ([...Colors.primaries]..shuffle()).first;
           return InkWell(
             splashColor: ([...Colors.primaries]..shuffle()).first,
             onTap: () {
-              print(product.description);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ProductOptionsScreen(
+                    product: product,
+                    imageBackgroundColor: imageBackgroundColor,
+                  ),
+                ),
+              );
             },
             child: Container(
               decoration: BoxDecoration(
@@ -283,7 +278,7 @@ class _ProductsWidgetState extends State<ProductsWidget> {
                 ),
               ),
               margin: EdgeInsets.only(top: 10.0),
-              height: 500.0,
+              height: 550.0,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
@@ -292,7 +287,7 @@ class _ProductsWidgetState extends State<ProductsWidget> {
                     width: MediaQuery.of(context).size.width * 1,
                     height: 250.0,
                     decoration: BoxDecoration(
-                      color: ([...Colors.primaries]..shuffle()).first,
+                      color: imageBackgroundColor,
                       shape: BoxShape.rectangle,
                       image: DecorationImage(
                         image: NetworkImage(
@@ -303,9 +298,6 @@ class _ProductsWidgetState extends State<ProductsWidget> {
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Text(""),
-                  ),
-                  SizedBox(
-                    height: 20.0,
                   ),
                   Container(
                     margin: EdgeInsets.all(20.0),
@@ -318,13 +310,15 @@ class _ProductsWidgetState extends State<ProductsWidget> {
                                 size: 30.0,
                                 color: Colors.green,
                               )
-                            : Text("Brought to you by ${product.companyName}"),
-                        SizedBox(
-                          width: 10.0,
-                        ),
+                            : Text(
+                                "Brought to you by ${product.companyName}",
+                                style: TextStyle(
+                                  color: Colors.lightBlueAccent,
+                                ),
+                              ),
                         product.trending!
                             ? Text(
-                                "Trending",
+                                " Trending",
                                 style: TextStyle(
                                   color: Colors.deepPurpleAccent,
                                 ),
@@ -346,7 +340,7 @@ class _ProductsWidgetState extends State<ProductsWidget> {
                     child: Text(
                       product.description.toString(),
                       overflow: TextOverflow.ellipsis,
-                      maxLines: 1,
+                      maxLines: 2,
                       softWrap: true,
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
@@ -359,7 +353,12 @@ class _ProductsWidgetState extends State<ProductsWidget> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("Price 1 year"),
+                        Text(
+                          "Price 12 months",
+                          style: TextStyle(
+                            color: Colors.lightGreen,
+                          ),
+                        ),
                         Text(
                           "€ ${product.price1year}",
                           style: TextStyle(
@@ -374,7 +373,7 @@ class _ProductsWidgetState extends State<ProductsWidget> {
                           },
                           icon: Icon(
                             Icons.favorite_border,
-                            color: Colors.deepPurpleAccent,
+                            color: Colors.redAccent[400],
                           ),
                         ),
                         IconButton(
@@ -388,6 +387,18 @@ class _ProductsWidgetState extends State<ProductsWidget> {
                           ),
                         ),
                       ],
+                    ),
+                  ),
+                  Container(
+                    alignment: Alignment.centerLeft,
+                    margin:
+                        EdgeInsets.symmetric(horizontal: 20.0, vertical: 0.0),
+                    child: Text(
+                      "${Random().nextInt(2000).toString()} + bought",
+                      style: TextStyle(
+                        color: Colors.blueGrey,
+                        fontSize: 10.0,
+                      ),
                     ),
                   ),
                 ],
