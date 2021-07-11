@@ -8,12 +8,12 @@ class FindMoreWidget extends StatefulWidget {
 }
 
 class _FindMoreWidgetState extends State<FindMoreWidget> {
-  List<String> _categories = [
-    'Gas',
-    'Insurance',
-    "Motor insurance",
-    "Carriers"
-  ];
+  // List<String> _categories = [
+  //   'Gas',
+  //   'Insurance',
+  //   "Motor insurance",
+  //   "Carriers"
+  // ];
 
   List<String> images = [
     "assets/home-utility.png",

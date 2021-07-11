@@ -1,3 +1,4 @@
+import 'package:flutte/screens/sim_only_screen.dart';
 import 'package:flutter/material.dart';
 
 class ProductTypes {
@@ -26,16 +27,26 @@ class _SmartPhoneContractsState extends State<SmartPhoneContracts> {
         image:
             "https://www.prijsvergelijken.nl/wp-content/plugins/prijsvergelijken/images/mobielvergelijker/icons/sim_only.png"),
     ProductTypes(
-        name: "Smart-Phones",
+        name: "Smart Phones",
         title: "Smart phone contracts",
         image:
-            "https://www.prijsvergelijken.nl/wp-content/plugins/prijsvergelijken/images/mobielvergelijker/phones/dvi_front_Iphone11_Zwart_305x450.png")
+            "https://www.prijsvergelijken.nl/wp-content/plugins/prijsvergelijken/images/mobielvergelijker/phones/dvi_front_Iphone11_Zwart_305x450.png"),
+    ProductTypes(
+        name: "Mobile insurance",
+        title: "Mobile insurance contracts",
+        image:
+            "https://cdn3.iconfinder.com/data/icons/mobile-insurance-filled-outline-1/64/Mobile_Insurance_-_Filled_Outline_-_28-28-512.png"),
+    ProductTypes(
+        name: "Smartphone repair",
+        title: "Mobile repair",
+        image:
+            "https://www.seekpng.com/png/full/226-2265552_related-wallpapers-cell-phone-repair.png")
   ];
 
   @override
   Widget build(BuildContext context) {
     mobileProducts.shuffle();
-    final parentColor = widget.parentColor;
+    // final parentColor = widget.parentColor;
     return Container(
       height: 325.0,
       child: Container(
@@ -69,20 +80,31 @@ class _SmartPhoneContractsState extends State<SmartPhoneContracts> {
                         mobileProducts[index].name.toString(),
                       ),
                     ),
-                    Image(
-                      fit: BoxFit.cover,
-                      image: NetworkImage(
-                        mobileProducts[index].image.toString(),
-                      ),
+                    FadeInImage.assetNetwork(
+                      placeholder: "assets/loading_gif.gif",
+                      image: mobileProducts[index].image.toString(),
+                      imageErrorBuilder: (context, error, stackTrace) =>
+                          CircularProgressIndicator(),
                     ),
                     Container(
                       child: TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          print(mobileProducts[index].title);
+
+                          if (mobileProducts[index].name == "Sim-Only") {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => SimOnlyScreen(),
+                              ),
+                            );
+                          }
+                        },
                         child: Text(
                           "Compare ${mobileProducts[index].name}",
                           style: TextStyle(
-                            color: parentColor,
-                          ),
+                              color: Colors.black,
+                              fontWeight: FontWeight.normal),
                         ),
                       ),
                     ),

@@ -209,7 +209,7 @@
 import 'dart:convert';
 import 'dart:math';
 import 'package:flutte/Enteties/product.dart';
-import 'package:flutte/screens/product_options.dart';
+import 'package:flutte/screens/mobile_product_options.dart';
 import 'package:flutter/material.dart';
 
 class ProductsWidget extends StatefulWidget {

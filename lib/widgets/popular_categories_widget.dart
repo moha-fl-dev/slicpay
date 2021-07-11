@@ -1,4 +1,5 @@
 import 'package:flutte/Enteties/popular_categories.dart';
+import 'package:flutte/screens/sim_only_screen.dart';
 import 'package:flutter/material.dart';
 
 class PopularCategoriesWidget extends StatefulWidget {
@@ -82,6 +83,14 @@ class _PopularCategoriesWidgetState extends State<PopularCategoriesWidget> {
               }
 
               return InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => SimOnlyScreen(),
+                    ),
+                  );
+                },
                 child: Container(
                   alignment: Alignment.bottomCenter,
                   width: 120,

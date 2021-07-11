@@ -1,7 +1,5 @@
 import 'package:flutte/widgets/popular_categories_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
-import 'package:hexcolor/hexcolor.dart';
 
 class SearchScreen extends StatefulWidget {
   _SearchScreen createState() => _SearchScreen();
@@ -49,7 +47,10 @@ class _SearchScreen extends State<SearchScreen> {
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
-                colors: <Color>[HexColor("#B597F6"), HexColor("#96C6EA")],
+                colors: <Color>[
+                  ([...Colors.primaries]..shuffle()).first,
+                  ([...Colors.primaries]..shuffle()).first
+                ],
               ),
             ),
           ),
@@ -79,16 +80,7 @@ class _SearchScreen extends State<SearchScreen> {
                   spacing: 5.0,
                   children: [
                     InkWell(
-                      onLongPress: () {
-                        Fluttertoast.showToast(
-                            msg: "This is Center Short Toast",
-                            toastLength: Toast.LENGTH_SHORT,
-                            gravity: ToastGravity.TOP,
-                            timeInSecForIosWeb: 1,
-                            backgroundColor: Colors.red,
-                            textColor: Colors.white,
-                            fontSize: 16.0);
-                      },
+                      onLongPress: () {},
                       onTap: () {
                         print("inkwell in search screen");
                       },

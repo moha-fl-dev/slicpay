@@ -2,7 +2,6 @@ import 'dart:convert' as convert;
 import 'package:flutte/widgets/menu.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:fluttertoast/fluttertoast.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -53,16 +52,7 @@ class _LoginScreenState extends State<LoginScreen> {
         Navigator.pushNamed(context, '/appPage');
       }
 
-      if (response.statusCode != 200) {
-        Fluttertoast.showToast(
-            msg: "E-mail or phone number is incorrect",
-            toastLength: Toast.LENGTH_LONG,
-            gravity: ToastGravity.TOP,
-            timeInSecForIosWeb: 1,
-            backgroundColor: Colors.amber,
-            textColor: Colors.white,
-            fontSize: 16.0);
-      }
+      if (response.statusCode != 200) {}
     } catch (e) {
       print(e);
     }

@@ -1,6 +1,23 @@
 /*
   random backgroundColor: ([...Colors.primaries]..shuffle()).first
   
+   // {
+    //     "productName": "Iphone 11 128GB",
+    //     "productImage":
+    //         "https://www.prijsvergelijken.nl/wp-content/plugins/prijsvergelijken/images/mobielvergelijker/phones/dvi_front_Iphone11_Zwart_305x450.png",
+    //     "companyLogo":
+    //         "https://bsimg.nl/assets/img/shared/providers/ben/color/h120.png",
+    //     "rating": 2.8,
+    //     "body":
+    //         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed nisi pellentesque, vehicula magna at, scelerisque leo. Maecenas tempor nunc vitae aliquam aliquet. Mauris sagittis lectus at sapien tempus, non posuere mi elementum. Morbi vehicula nulla quis nulla volutpat luctus. Suspendisse a facilisis nibh. Suspendisse sapien magna, accumsan vel vulputate id, sollicitudin ut massa. Vivamus malesuada tellus ut mi viverra, at dignissim velit ullamcorper.",
+    //     "data": "100 GB",
+    //     "callMinutes": "Unlimited",
+    //     "price1Year": 70,
+    //     "price2Year": 72,
+    //     "trending": true,
+    //     "vensyanRecomended": true
+    // }
+
 
   SingleChildScrollView( ///// very important
         physics: ScrollPhysics(),

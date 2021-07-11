@@ -9,7 +9,6 @@ import 'package:flutte/widgets/yellow_center_item_widget.dart';
 import 'package:flutte/widgets/products_widget.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
-import 'package:hexcolor/hexcolor.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -113,7 +112,10 @@ class _HomeScreenState extends State<HomeScreen> {
             gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
-              colors: <Color>[HexColor("#B597F6"), HexColor("#96C6EA")],
+              colors: <Color>[
+                ([...Colors.primaries]..shuffle()).first,
+                ([...Colors.primaries]..shuffle()).first
+              ],
             ),
           ),
         ),
@@ -124,7 +126,7 @@ class _HomeScreenState extends State<HomeScreen> {
               onPressed: () {},
               icon: Icon(
                 Icons.search,
-                color: HexColor("#ffffff"),
+                color: ([...Colors.primaries]..shuffle()).first,
               ),
             ),
           ),
@@ -134,12 +136,12 @@ class _HomeScreenState extends State<HomeScreen> {
               onPressed: () {},
               icon: Icon(
                 Icons.shopping_cart,
-                color: HexColor("#ffffff"),
+                color: ([...Colors.primaries]..shuffle()).first,
               ),
             ),
           ),
         ],
-        backgroundColor: HexColor("#2c98f0"),
+        backgroundColor: ([...Colors.primaries]..shuffle()).first,
         elevation: 0.0,
         title: Padding(
           padding: const EdgeInsets.only(left: 20.0),
@@ -148,7 +150,7 @@ class _HomeScreenState extends State<HomeScreen> {
             style: TextStyle(
               fontStyle: FontStyle.italic,
               fontWeight: FontWeight.normal,
-              color: HexColor("#ffffff"),
+              color: ([...Colors.primaries]..shuffle()).first,
             ),
           ),
         ),

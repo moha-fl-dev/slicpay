@@ -1,0 +1,126 @@
+[
+    {
+        "productName": "Iphone 12 128 GB Black",
+        "companyLogo": "https://bsimg.nl/assets/img/shared/providers/hollandsnieuwe/color/h120.png",
+        "productImage": "https://bsimg.nl/images/apple-iphone-12_2.jpg/FlQ1RNRzj5Yylze7NgXmTOBT1VM%3D/fit-in/177x275/filters%3Aformat%28jpg%29%3Aupscale%28%29",
+        "rating": 4.5,
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempor, massa sit amet consectetur tempus, ligula neque molestie dui, non elementum justo justo vitae quam. Donec consequat malesuada gravida. Sed molestie sapien in nisl convallis luctus. Nullam bibendum nisi eget ante pharetra semper. Ut euismod ultricies elit in vehicula. In non enim eros. Quisque faucibus arcu eros, et dignissim quam congue et. Suspendisse potenti. Duis eget sem in tellus mattis consequat et in est. Nunc tincidunt risus nisi, nec lacinia est sollicitudin sollicitudin.",
+        "data": "25 GB",
+        "callMinutes": "2000",
+        "price1Year": 62,
+        "price2Year": 60,
+        "trending": false,
+        "vensyanRecomended": true
+    },
+    {
+        "productName": "Iphone 11 128GB",
+        "productImage":
+            "https://www.prijsvergelijken.nl/wp-content/plugins/prijsvergelijken/images/mobielvergelijker/phones/dvi_front_Iphone11_Zwart_305x450.png",
+        "companyLogo":
+            "https://bsimg.nl/assets/img/shared/providers/ben/color/h120.png",
+        "rating": 2.8,
+        "body":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed nisi pellentesque, vehicula magna at, scelerisque leo. Maecenas tempor nunc vitae aliquam aliquet. Mauris sagittis lectus at sapien tempus, non posuere mi elementum. Morbi vehicula nulla quis nulla volutpat luctus. Suspendisse a facilisis nibh. Suspendisse sapien magna, accumsan vel vulputate id, sollicitudin ut massa. Vivamus malesuada tellus ut mi viverra, at dignissim velit ullamcorper.",
+        "data": "100 GB",
+        "callMinutes": "Unlimited",
+        "price1Year": 70,
+        "price2Year": 72,
+        "trending": true,
+        "vensyanRecomended": true
+    },
+    {
+        "productName": "Samung galaxy S10 128 GB Black",
+        "companyLogo": "https://bsimg.nl/assets/img/shared/providers/tele2/color/h120.png",
+        "productImage": "https://bsimg.nl/images/samsung-galaxy-s10_8.jpg/gC4IgyljKlzOqlnWB1BXKyvVCFM%3D/fit-in/177x275/filters%3Aformat%28jpg%29%3Aupscale%28%29",
+        "rating": 3.5,
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempor, massa sit amet consectetur tempus, ligula neque molestie dui, non elementum justo justo vitae quam. Donec consequat malesuada gravida. Sed molestie sapien in nisl convallis luctus. Nullam bibendum nisi eget ante pharetra semper. Ut euismod ultricies elit in vehicula. In non enim eros. Quisque faucibus arcu eros, et dignissim quam congue et. Suspendisse potenti. Duis eget sem in tellus mattis consequat et in est. Nunc tincidunt risus nisi, nec lacinia est sollicitudin sollicitudin.",
+        "data": "70 GB",
+        "callMinutes": "Unlimted",
+        "price1Year": 60,
+        "price2Year": 58,
+        "trending": true,
+        "vensyanRecomended": false
+    },
+    {
+        "productName": "Apple iPhone XR 64GB Black",
+        "companyLogo": "https://bsimg.nl/assets/img/shared/providers/kpn/color/h120.png",
+        "productImage": "https://bsimg.nl/images/apple-iphone-xr-64gb-zwart_2.jpg/tb23NrRIt5XGHoB7aQLZzR3j9nw%3D/fit-in/177x275/filters%3Aformat%28jpg%29%3Aupscale%28%29",
+        "rating": 2.1,
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempor, massa sit amet consectetur tempus, ligula neque molestie dui, non elementum justo justo vitae quam. Donec consequat malesuada gravida. Sed molestie sapien in nisl convallis luctus. Nullam bibendum nisi eget ante pharetra semper. Ut euismod ultricies elit in vehicula. In non enim eros. Quisque faucibus arcu eros, et dignissim quam congue et. Suspendisse potenti. Duis eget sem in tellus mattis consequat et in est. Nunc tincidunt risus nisi, nec lacinia est sollicitudin sollicitudin.",
+        "data": "20 GB",
+        "callMinutes": "Unlimted",
+        "price1Year": 49,
+        "price2Year": 45,
+        "trending": false,
+        "vensyanRecomended": false
+    },
+    {
+        "productName": "Samsung Galaxy S21 Ultra 5G 128GB G998 Zwart",
+        "companyLogo": "https://bsimg.nl/assets/img/shared/providers/t-mobile/color/h120.png",
+        "productImage": "https://bsimg.nl/images/samsung-galaxy-s21-ultra-5g-128gb-zwart_1.jpg/FOLEXGetq3yffeaOYeHkhfz4QIA%3D/fit-in/177x275/filters%3Aformat%28jpg%29%3Aupscale%28%29",
+        "rating": 4.8,
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempor, massa sit amet consectetur tempus, ligula neque molestie dui, non elementum justo justo vitae quam. Donec consequat malesuada gravida. Sed molestie sapien in nisl convallis luctus. Nullam bibendum nisi eget ante pharetra semper. Ut euismod ultricies elit in vehicula. In non enim eros. Quisque faucibus arcu eros, et dignissim quam congue et. Suspendisse potenti. Duis eget sem in tellus mattis consequat et in est. Nunc tincidunt risus nisi, nec lacinia est sollicitudin sollicitudin.",
+        "data": "Unlimited GB",
+        "callMinutes": "Unlimted",
+        "price1Year": 82,
+        "price2Year": 80,
+        "trending": true,
+        "vensyanRecomended": true
+    },
+    {
+        "productName": "Samung galaxy S10 128 GB Black",
+        "companyLogo": "https://bsimg.nl/assets/img/shared/providers/tele2/color/h120.png",
+        "productImage": "https://bsimg.nl/images/samsung-galaxy-s10_8.jpg/gC4IgyljKlzOqlnWB1BXKyvVCFM%3D/fit-in/177x275/filters%3Aformat%28jpg%29%3Aupscale%28%29",
+        "rating": 3.5,
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempor, massa sit amet consectetur tempus, ligula neque molestie dui, non elementum justo justo vitae quam. Donec consequat malesuada gravida. Sed molestie sapien in nisl convallis luctus. Nullam bibendum nisi eget ante pharetra semper. Ut euismod ultricies elit in vehicula. In non enim eros. Quisque faucibus arcu eros, et dignissim quam congue et. Suspendisse potenti. Duis eget sem in tellus mattis consequat et in est. Nunc tincidunt risus nisi, nec lacinia est sollicitudin sollicitudin.",
+        "data": "70 GB",
+        "callMinutes": "Unlimted",
+        "price1Year": 60,
+        "price2Year": 58,
+        "trending": true,
+        "vensyanRecomended": false
+    },
+    {
+        "productName": "Iphone 11 128GB",
+        "productImage":
+            "https://www.prijsvergelijken.nl/wp-content/plugins/prijsvergelijken/images/mobielvergelijker/phones/dvi_front_Iphone11_Zwart_305x450.png",
+        "companyLogo":
+            "https://bsimg.nl/assets/img/shared/providers/ben/color/h120.png",
+        "rating": 2.8,
+        "body":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed nisi pellentesque, vehicula magna at, scelerisque leo. Maecenas tempor nunc vitae aliquam aliquet. Mauris sagittis lectus at sapien tempus, non posuere mi elementum. Morbi vehicula nulla quis nulla volutpat luctus. Suspendisse a facilisis nibh. Suspendisse sapien magna, accumsan vel vulputate id, sollicitudin ut massa. Vivamus malesuada tellus ut mi viverra, at dignissim velit ullamcorper.",
+        "data": "100 GB",
+        "callMinutes": "Unlimited",
+        "price1Year": 70,
+        "price2Year": 72,
+        "trending": true,
+        "vensyanRecomended": true
+    },
+    {
+        "productName": "Samung galaxy S10 128 GB Black",
+        "companyLogo": "https://bsimg.nl/assets/img/shared/providers/tele2/color/h120.png",
+        "productImage": "https://bsimg.nl/images/samsung-galaxy-s10_8.jpg/gC4IgyljKlzOqlnWB1BXKyvVCFM%3D/fit-in/177x275/filters%3Aformat%28jpg%29%3Aupscale%28%29",
+        "rating": 3.5,
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempor, massa sit amet consectetur tempus, ligula neque molestie dui, non elementum justo justo vitae quam. Donec consequat malesuada gravida. Sed molestie sapien in nisl convallis luctus. Nullam bibendum nisi eget ante pharetra semper. Ut euismod ultricies elit in vehicula. In non enim eros. Quisque faucibus arcu eros, et dignissim quam congue et. Suspendisse potenti. Duis eget sem in tellus mattis consequat et in est. Nunc tincidunt risus nisi, nec lacinia est sollicitudin sollicitudin.",
+        "data": "70 GB",
+        "callMinutes": "Unlimted",
+        "price1Year": 60,
+        "price2Year": 58,
+        "trending": true,
+        "vensyanRecomended": false
+    },
+    {
+        "productName": "Google Pixel 64 GB Black",
+        "companyLogo": "https://bsimg.nl/assets/img/shared/providers/vodafone/color/h120.png",
+        "productImage": "https://bsimg.nl/images/google-pixel-5-zwart_3.jpg/hwQ_ZcMwsER0v4NGG_nreFg3nWc%3D/fit-in/177x275/filters%3Aformat%28jpg%29%3Aupscale%28%29",
+        "rating": 3.0,
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempor, massa sit amet consectetur tempus, ligula neque molestie dui, non elementum justo justo vitae quam. Donec consequat malesuada gravida. Sed molestie sapien in nisl convallis luctus. Nullam bibendum nisi eget ante pharetra semper. Ut euismod ultricies elit in vehicula. In non enim eros. Quisque faucibus arcu eros, et dignissim quam congue et. Suspendisse potenti. Duis eget sem in tellus mattis consequat et in est. Nunc tincidunt risus nisi, nec lacinia est sollicitudin sollicitudin.",
+        "data": "70 GB",
+        "callMinutes": "Unlimted",
+        "price1Year": 30,
+        "price2Year": 28,
+        "trending": false,
+        "vensyanRecomended": false
+    }
+
+]

@@ -1,5 +1,4 @@
 import 'package:flutte/screens/Inspiration.dart';
-import 'package:flutte/screens/app_page.dart';
 import 'package:flutte/screens/search_screen.dart';
 import 'package:flutte/screens/home.dart';
 import 'package:flutte/screens/profile.dart';
